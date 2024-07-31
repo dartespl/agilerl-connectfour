@@ -1,0 +1,159 @@
+
+
+
+
+
+
+
+  6%|███████▋                                                                                                                        | 6/100 [00:21<05:38,  3.60s/it]
+Traceback (most recent call last):
+  File "/home/pawel/agilerl_connect4/main.py", line 896, in <module>
+    agent.learn(experiences)
+  File "/home/pawel/.local/lib/python3.10/site-packages/agilerl/algorithms/dqn.py", line 299, in learn
+    q_eval = self.actor(states).gather(1, actions.long())
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pawel/.local/lib/python3.10/site-packages/agilerl/networks/evolvable_cnn.py", line 550, in forward
+    x = self.feature_net(x)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 104, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/home/pawel/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 1489, in relu
+    def relu(input: Tensor, inplace: bool = False) -> Tensor:  # noqa: D400,D402
+KeyboardInterrupt
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m /home/pawel/agilerl_connect4/[1mmain.py[22m:[94m896[39m in [92m<module>[39m                                             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m    893 │   │   │   │   │   │   │   # Sample replay buffer                                        [31m│
+[31m│[39m    894 │   │   │   │   │   │   │   # Learn according to agent"s RL algorithm                     [31m│
+[31m│[39m    895 │   │   │   │   │   │   │   experiences = memory.sample(agent.batch_size)                 [31m│
+[31m│[39m [31m❱ [39m 896 │   │   │   │   │   │   │   agent.learn(experiences)                                      [31m│
+[31m│[39m    897 │   │   │   │   │   │                                                                     [31m│
+[31m│[39m    898 │   │   │   │   │   │   # Stop episode if any agents have terminated                      [31m│
+[31m│[39m    899 │   │   │   │   │   │   [94mif[39m done [95mor[39m truncation:                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/agilerl/algorithms/[1mdqn.py[22m:[94m299[39m in [92mlearn[39m           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   296 │   │                                                                                      [31m│
+[31m│[39m   297 │   │   # target, if terminal then y_j = rewards                                           [31m│
+[31m│[39m   298 │   │   y_j = rewards + [96mself[39m.gamma * q_target * ([94m1[39m - dones)                                [31m│
+[31m│[39m [31m❱ [39m299 │   │   q_eval = [96mself[39m.actor(states).gather([94m1[39m, actions.long())                              [31m│
+[31m│[39m   300 │   │                                                                                      [31m│
+[31m│[39m   301 │   │   # loss backprop                                                                    [31m│
+[31m│[39m   302 │   │   loss = [96mself[39m.criterion(q_eval, y_j)                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1553[39m in               [31m│
+[31m│[39m [92m_wrapped_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1550 │   │   [94mif[39m [96mself[39m._compiled_call_impl [95mis[39m [95mnot[39m [94mNone[39m:                                          [31m│
+[31m│[39m   1551 │   │   │   [94mreturn[39m [96mself[39m._compiled_call_impl(*args, **kwargs)  # type: ignore[misc]        [31m│
+[31m│[39m   1552 │   │   [94melse[39m:                                                                             [31m│
+[31m│[39m [31m❱ [39m1553 │   │   │   [94mreturn[39m [96mself[39m._call_impl(*args, **kwargs)                                       [31m│
+[31m│[39m   1554 │                                                                                         [31m│
+[31m│[39m   1555 │   [94mdef[39m [92m_call_impl[39m([96mself[39m, *args, **kwargs):                                                [31m│
+[31m│[39m   1556 │   │   forward_call = ([96mself[39m._slow_forward [94mif[39m torch._C._get_tracing_state() [94melse[39m [96mself[39m.fo  [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1562[39m in [92m_call_impl[39m    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1559 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward_hooks   [31m│
+[31m│[39m   1560 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks                   [31m│
+[31m│[39m   1561 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):                   [31m│
+[31m│[39m [31m❱ [39m1562 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                          [31m│
+[31m│[39m   1563 │   │                                                                                     [31m│
+[31m│[39m   1564 │   │   [94mtry[39m:                                                                              [31m│
+[31m│[39m   1565 │   │   │   result = [94mNone[39m                                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/agilerl/networks/[1mevolvable_cnn.py[22m:[94m550[39m in [92mforward[39m [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   547 │   │   [94mif[39m [96mself[39m.normalize:                                                                 [31m│
+[31m│[39m   548 │   │   │   x = x / [94m255.0[39m                                                                  [31m│
+[31m│[39m   549 │   │                                                                                      [31m│
+[31m│[39m [31m❱ [39m550 │   │   x = [96mself[39m.feature_net(x)                                                            [31m│
+[31m│[39m   551 │   │   x = x.reshape(batch_size, -[94m1[39m)                                                      [31m│
+[31m│[39m   552 │   │                                                                                      [31m│
+[31m│[39m   553 │   │   [94mif[39m [96mself[39m.critic:                                                                    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1553[39m in               [31m│
+[31m│[39m [92m_wrapped_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1550 │   │   [94mif[39m [96mself[39m._compiled_call_impl [95mis[39m [95mnot[39m [94mNone[39m:                                          [31m│
+[31m│[39m   1551 │   │   │   [94mreturn[39m [96mself[39m._compiled_call_impl(*args, **kwargs)  # type: ignore[misc]        [31m│
+[31m│[39m   1552 │   │   [94melse[39m:                                                                             [31m│
+[31m│[39m [31m❱ [39m1553 │   │   │   [94mreturn[39m [96mself[39m._call_impl(*args, **kwargs)                                       [31m│
+[31m│[39m   1554 │                                                                                         [31m│
+[31m│[39m   1555 │   [94mdef[39m [92m_call_impl[39m([96mself[39m, *args, **kwargs):                                                [31m│
+[31m│[39m   1556 │   │   forward_call = ([96mself[39m._slow_forward [94mif[39m torch._C._get_tracing_state() [94melse[39m [96mself[39m.fo  [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1562[39m in [92m_call_impl[39m    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1559 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward_hooks   [31m│
+[31m│[39m   1560 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks                   [31m│
+[31m│[39m   1561 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):                   [31m│
+[31m│[39m [31m❱ [39m1562 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                          [31m│
+[31m│[39m   1563 │   │                                                                                     [31m│
+[31m│[39m   1564 │   │   [94mtry[39m:                                                                              [31m│
+[31m│[39m   1565 │   │   │   result = [94mNone[39m                                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mcontainer.py[22m:[94m219[39m in [92mforward[39m     [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   216 │   # with Any as TorchScript expects a more precise type                                  [31m│
+[31m│[39m   217 │   [94mdef[39m [92mforward[39m([96mself[39m, [96minput[39m):                                                              [31m│
+[31m│[39m   218 │   │   [94mfor[39m module [95min[39m [96mself[39m:                                                                [31m│
+[31m│[39m [31m❱ [39m219 │   │   │   [96minput[39m = module([96minput[39m)                                                          [31m│
+[31m│[39m   220 │   │   [94mreturn[39m [96minput[39m                                                                       [31m│
+[31m│[39m   221 │                                                                                          [31m│
+[31m│[39m   222 │   [94mdef[39m [92mappend[39m([96mself[39m, module: Module) -> [33m'Sequential'[39m:                                      [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1553[39m in               [31m│
+[31m│[39m [92m_wrapped_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1550 │   │   [94mif[39m [96mself[39m._compiled_call_impl [95mis[39m [95mnot[39m [94mNone[39m:                                          [31m│
+[31m│[39m   1551 │   │   │   [94mreturn[39m [96mself[39m._compiled_call_impl(*args, **kwargs)  # type: ignore[misc]        [31m│
+[31m│[39m   1552 │   │   [94melse[39m:                                                                             [31m│
+[31m│[39m [31m❱ [39m1553 │   │   │   [94mreturn[39m [96mself[39m._call_impl(*args, **kwargs)                                       [31m│
+[31m│[39m   1554 │                                                                                         [31m│
+[31m│[39m   1555 │   [94mdef[39m [92m_call_impl[39m([96mself[39m, *args, **kwargs):                                                [31m│
+[31m│[39m   1556 │   │   forward_call = ([96mself[39m._slow_forward [94mif[39m torch._C._get_tracing_state() [94melse[39m [96mself[39m.fo  [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1562[39m in [92m_call_impl[39m    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1559 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward_hooks   [31m│
+[31m│[39m   1560 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks                   [31m│
+[31m│[39m   1561 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):                   [31m│
+[31m│[39m [31m❱ [39m1562 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                          [31m│
+[31m│[39m   1563 │   │                                                                                     [31m│
+[31m│[39m   1564 │   │   [94mtry[39m:                                                                              [31m│
+[31m│[39m   1565 │   │   │   result = [94mNone[39m                                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/modules/[1mactivation.py[22m:[94m104[39m in [92mforward[39m    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m    101 │   │   [96mself[39m.inplace = inplace                                                            [31m│
+[31m│[39m    102 │                                                                                         [31m│
+[31m│[39m    103 │   [94mdef[39m [92mforward[39m([96mself[39m, [96minput[39m: Tensor) -> Tensor:                                           [31m│
+[31m│[39m [31m❱ [39m 104 │   │   [94mreturn[39m F.relu([96minput[39m, inplace=[96mself[39m.inplace)                                        [31m│
+[31m│[39m    105 │                                                                                         [31m│
+[31m│[39m    106 │   [94mdef[39m [92mextra_repr[39m([96mself[39m) -> [96mstr[39m:                                                          [31m│
+[31m│[39m    107 │   │   inplace_str = [33m'inplace=True'[39m [94mif[39m [96mself[39m.inplace [94melse[39m [33m''[39m                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/pawel/.local/lib/python3.10/site-packages/torch/nn/[1mfunctional.py[22m:[94m1489[39m in [92mrelu[39m              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1486 )                                                                                         [31m│
+[31m│[39m   1487                                                                                           [31m│
+[31m│[39m   1488                                                                                           [31m│
+[31m│[39m [31m❱ [39m1489 [94mdef[39m [92mrelu[39m([96minput[39m: Tensor, inplace: [96mbool[39m = [94mFalse[39m) -> Tensor:  # noqa: D400,D402              [31m│
+[31m│[39m   1490 │   [33mr"""relu(input, inplace=False) -> Tensor[39m                                              [31m│
+[31m│[39m   1491 │                                                                                         [31m│
+[31m│[39m   1492 │   [33mApplies the rectified linear unit function element-wise. See[39m                          [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mKeyboardInterrupt

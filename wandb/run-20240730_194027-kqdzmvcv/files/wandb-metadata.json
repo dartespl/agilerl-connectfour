@@ -1,0 +1,99 @@
+{
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.0",
+    "heartbeatAt": "2024-07-30T17:40:28.634827",
+    "startedAt": "2024-07-30T17:40:27.553868",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/pawel/agilerl_connect4/main.py",
+    "codePath": "main.py",
+    "host": "Pawel",
+    "username": "pawel",
+    "executable": "/home/pawel/anaconda3/envs/agilerl/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3293.7189999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.719,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 43.64058303833008
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 6.702327728271484
+    }
+}

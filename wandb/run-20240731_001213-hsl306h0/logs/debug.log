@@ -1,0 +1,33 @@
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_setup.py:_flush():76] Configure stats pid to 3052
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_setup.py:_flush():76] Loading settings from /home/pawel/.config/wandb/settings
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_setup.py:_flush():76] Loading settings from /home/pawel/agilerl_connect4/wandb/settings
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': '/home/pawel/agilerl_connect4/main.py'}
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_init.py:_log_setup():506] Logging user logs to /home/pawel/agilerl_connect4/wandb/run-20240731_001213-hsl306h0/logs/debug.log
+2024-07-31 00:12:13,857 INFO    MainThread:3052 [wandb_init.py:_log_setup():507] Logging internal logs to /home/pawel/agilerl_connect4/wandb/run-20240731_001213-hsl306h0/logs/debug-internal.log
+2024-07-31 00:12:13,858 INFO    MainThread:3052 [wandb_init.py:init():546] calling init triggers
+2024-07-31 00:12:13,858 INFO    MainThread:3052 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'algo': 'Evo HPO Rainbow DQN', 'env': 'connect_four_v3', 'INIT_HP': {'POPULATION_SIZE': 6, 'ALGO': 'DQN', 'DOUBLE': True, 'BATCH_SIZE': 256, 'LR': 0.0001, 'GAMMA': 0.99, 'MEMORY_SIZE': 100000, 'LEARN_STEP': 1, 'N_STEP': 1, 'PER': False, 'ALPHA': 0.6, 'TAU': 0.01, 'BETA': 0.4, 'PRIOR_EPS': 1e-06, 'NUM_ATOMS': 51, 'V_MIN': 0.0, 'V_MAX': 200.0, 'DISCRETE_ACTIONS': True, 'MAX_ACTION': None, 'MIN_ACTION': None}, 'lesson': {'opponent': 'strong', 'opponent_pool_size': None, 'opponent_upgrade': None, 'eval_opponent': 'strong', 'pretrained_path': 'models/DQN/lesson2_trained_agent.pt', 'save_path': 'models/DQN/lesson3_trained_agent.pt', 'max_train_episodes': 3000, 'buffer_warm_up': False, 'warm_up_opponent': None, 'agent_warm_up': 0, 'block_vert_coef': 1, 'rewards': {'win': 1, 'vertical_win': 1, 'three_in_row': 0.02, 'opp_three_in_row': -0.02, 'lose': -1, 'play_continues': 0}}}
+2024-07-31 00:12:13,858 INFO    MainThread:3052 [wandb_init.py:init():602] starting backend
+2024-07-31 00:12:13,858 INFO    MainThread:3052 [wandb_init.py:init():606] setting up manager
+2024-07-31 00:12:13,859 INFO    MainThread:3052 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-31 00:12:13,860 INFO    MainThread:3052 [wandb_init.py:init():613] backend started and connected
+2024-07-31 00:12:13,861 INFO    MainThread:3052 [wandb_init.py:init():701] updated telemetry
+2024-07-31 00:12:13,862 INFO    MainThread:3052 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2024-07-31 00:12:14,830 INFO    MainThread:3052 [wandb_run.py:_on_init():2131] communicating current version
+2024-07-31 00:12:15,101 INFO    MainThread:3052 [wandb_run.py:_on_init():2140] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-31 00:12:15,101 INFO    MainThread:3052 [wandb_init.py:init():789] starting run threads in backend
+2024-07-31 00:12:16,187 INFO    MainThread:3052 [wandb_run.py:_console_start():2112] atexit reg
+2024-07-31 00:12:16,187 INFO    MainThread:3052 [wandb_run.py:_redirect():1967] redirect: SettingsConsole.WRAP_RAW
+2024-07-31 00:12:16,188 INFO    MainThread:3052 [wandb_run.py:_redirect():2032] Wrapping output streams.
+2024-07-31 00:12:16,188 INFO    MainThread:3052 [wandb_run.py:_redirect():2057] Redirects installed.
+2024-07-31 00:12:16,188 INFO    MainThread:3052 [wandb_init.py:init():831] run started, returning control to user process
+2024-07-31 00:36:59,821 INFO    MainThread:3052 [wandb_run.py:_finish():1852] finishing run pawel1999f_team/AgileRL/hsl306h0
+2024-07-31 00:36:59,822 INFO    MainThread:3052 [wandb_run.py:_atexit_cleanup():2081] got exitcode: 0
+2024-07-31 00:36:59,822 INFO    MainThread:3052 [wandb_run.py:_restore():2064] restore
+2024-07-31 00:36:59,822 INFO    MainThread:3052 [wandb_run.py:_restore():2070] restore done
+2024-07-31 00:37:04,656 INFO    MainThread:3052 [wandb_run.py:_footer_history_summary_info():3429] rendering history
+2024-07-31 00:37:04,657 INFO    MainThread:3052 [wandb_run.py:_footer_history_summary_info():3461] rendering summary
+2024-07-31 00:37:04,659 INFO    MainThread:3052 [wandb_run.py:_footer_sync_info():3387] logging synced files

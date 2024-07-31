@@ -1,0 +1,85 @@
+wandb_version: 1
+
+INIT_HP:
+  desc: null
+  value:
+    ALGO: DQN
+    ALPHA: 0.6
+    BATCH_SIZE: 256
+    BETA: 0.4
+    DISCRETE_ACTIONS: true
+    DOUBLE: true
+    GAMMA: 0.99
+    LEARN_STEP: 1
+    LR: 0.0001
+    MAX_ACTION: null
+    MEMORY_SIZE: 100000
+    MIN_ACTION: null
+    NUM_ATOMS: 51
+    N_STEP: 1
+    PER: false
+    POPULATION_SIZE: 6
+    PRIOR_EPS: 1.0e-06
+    TAU: 0.01
+    V_MAX: 200.0
+    V_MIN: 0.0
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.11
+    framework: huggingface
+    huggingface_version: 4.43.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.0
+    start_time: 1722296014.372912
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 55
+      - 71
+      2:
+      - 1
+      - 11
+      - 49
+      - 55
+      - 71
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.10.0
+      5: 0.13.11
+      6: 4.43.3
+      8:
+      - 5
+algo:
+  desc: null
+  value: Evo HPO Rainbow DQN
+env:
+  desc: null
+  value: connect_four_v3
+lesson:
+  desc: null
+  value:
+    agent_warm_up: 0
+    block_vert_coef: 1
+    buffer_warm_up: false
+    eval_opponent: strong
+    max_train_episodes: 10
+    opponent: strong
+    opponent_pool_size: null
+    opponent_upgrade: null
+    pretrained_path: models/DQN/lesson2_trained_agent.pt
+    rewards:
+      lose: -1
+      opp_three_in_row: -0.02
+      play_continues: 0
+      three_in_row: 0.02
+      vertical_win: 1
+      win: 1
+    save_path: models/DQN/lesson3_trained_agent.pt
+    warm_up_opponent: null

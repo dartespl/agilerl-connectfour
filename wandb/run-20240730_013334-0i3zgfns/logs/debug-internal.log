@@ -1,0 +1,175 @@
+2024-07-30 01:33:35,049 INFO    StreamThr :2461 [internal.py:wandb_internal():87] W&B internal server running at pid: 2461, started at: 2024-07-30 01:33:35.049242
+2024-07-30 01:33:35,051 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: status
+2024-07-30 01:33:35,052 INFO    WriterThread:2461 [datastore.py:open_for_write():85] open: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/run-0i3zgfns.wandb
+2024-07-30 01:33:35,052 DEBUG   SenderThread:2461 [sender.py:send():336] send: header
+2024-07-30 01:33:35,052 DEBUG   SenderThread:2461 [sender.py:send():336] send: run
+2024-07-30 01:33:35,659 INFO    SenderThread:2461 [dir_watcher.py:__init__():219] watching files in: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files
+2024-07-30 01:33:35,659 INFO    SenderThread:2461 [sender.py:_start_run_threads():1078] run started: 0i3zgfns with start time 1722296014.372912
+2024-07-30 01:33:35,659 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: summary_record
+2024-07-30 01:33:35,659 INFO    SenderThread:2461 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-07-30 01:33:35,660 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: check_version
+2024-07-30 01:33:35,660 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: check_version
+2024-07-30 01:33:35,872 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: run_start
+2024-07-30 01:33:35,873 DEBUG   HandlerThread:2461 [system_info.py:__init__():31] System info init
+2024-07-30 01:33:35,873 DEBUG   HandlerThread:2461 [system_info.py:__init__():46] System info init done
+2024-07-30 01:33:35,873 INFO    HandlerThread:2461 [system_monitor.py:start():183] Starting system monitor
+2024-07-30 01:33:35,874 INFO    SystemMonitor:2461 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2024-07-30 01:33:35,874 INFO    HandlerThread:2461 [system_monitor.py:probe():204] Collecting system info
+2024-07-30 01:33:35,874 INFO    SystemMonitor:2461 [interfaces.py:start():187] Started cpu monitoring
+2024-07-30 01:33:35,875 INFO    SystemMonitor:2461 [interfaces.py:start():187] Started disk monitoring
+2024-07-30 01:33:35,876 INFO    SystemMonitor:2461 [interfaces.py:start():187] Started gpu monitoring
+2024-07-30 01:33:35,876 INFO    SystemMonitor:2461 [interfaces.py:start():187] Started memory monitoring
+2024-07-30 01:33:35,876 INFO    SystemMonitor:2461 [interfaces.py:start():187] Started network monitoring
+2024-07-30 01:33:35,880 DEBUG   HandlerThread:2461 [system_info.py:probe():195] Probing system
+2024-07-30 01:33:35,880 DEBUG   HandlerThread:2461 [git.py:repo():40] git repository is invalid
+2024-07-30 01:33:35,880 DEBUG   HandlerThread:2461 [system_info.py:probe():240] Probing system done
+2024-07-30 01:33:35,880 DEBUG   HandlerThread:2461 [system_monitor.py:probe():213] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.0', 'heartbeatAt': '2024-07-29T23:33:35.880514', 'startedAt': '2024-07-29T23:33:34.368534', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/pawel/agilerl_connect4/main.py', 'codePath': 'main.py', 'host': 'Pawel', 'username': 'pawel', 'executable': '/home/pawel/anaconda3/envs/agilerl/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3293.7189999999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}, {'current': 3293.719, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1006.853931427002, 'used': 43.626739501953125}, 'gpu': 'NVIDIA GeForce RTX 3050 Ti Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Ti Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 6.70233154296875}}
+2024-07-30 01:33:35,880 INFO    HandlerThread:2461 [system_monitor.py:probe():214] Finished collecting system info
+2024-07-30 01:33:35,881 INFO    HandlerThread:2461 [system_monitor.py:probe():217] Publishing system info
+2024-07-30 01:33:35,881 DEBUG   HandlerThread:2461 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-07-30 01:33:35,881 DEBUG   HandlerThread:2461 [system_info.py:_save_pip():67] Saving pip packages done
+2024-07-30 01:33:35,881 DEBUG   HandlerThread:2461 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-07-30 01:33:35,882 ERROR   gpu       :2461 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2024-07-30 01:33:36,295 DEBUG   HandlerThread:2461 [system_info.py:_save_conda():86] Saving conda packages done
+2024-07-30 01:33:36,296 INFO    HandlerThread:2461 [system_monitor.py:probe():219] Finished publishing system info
+2024-07-30 01:33:36,296 DEBUG   SenderThread:2461 [sender.py:send():336] send: files
+2024-07-30 01:33:36,297 INFO    SenderThread:2461 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2024-07-30 01:33:36,301 DEBUG   SenderThread:2461 [sender.py:send():336] send: telemetry
+2024-07-30 01:33:36,301 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: stop_status
+2024-07-30 01:33:36,302 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: stop_status
+2024-07-30 01:33:36,660 INFO    Thread-24 :2461 [dir_watcher.py:_on_file_created():278] file/dir created: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/conda-environment.yaml
+2024-07-30 01:33:36,660 INFO    Thread-24 :2461 [dir_watcher.py:_on_file_created():278] file/dir created: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/output.log
+2024-07-30 01:33:36,660 INFO    Thread-24 :2461 [dir_watcher.py:_on_file_created():278] file/dir created: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/wandb-summary.json
+2024-07-30 01:33:36,660 INFO    Thread-24 :2461 [dir_watcher.py:_on_file_created():278] file/dir created: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/requirements.txt
+2024-07-30 01:33:36,660 INFO    Thread-24 :2461 [dir_watcher.py:_on_file_created():278] file/dir created: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/wandb-metadata.json
+2024-07-30 01:33:37,039 INFO    wandb-upload_0:2461 [upload_job.py:push():138] Uploaded file /tmp/tmp7_n2vq7_wandb/am2cd2qz-wandb-metadata.json
+2024-07-30 01:33:37,888 ERROR   gpu       :2461 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2024-07-30 01:33:38,660 INFO    Thread-24 :2461 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/output.log
+2024-07-30 01:33:39,900 ERROR   gpu       :2461 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2024-07-30 01:33:39,994 DEBUG   SenderThread:2461 [sender.py:send():336] send: telemetry
+2024-07-30 01:33:39,994 DEBUG   SenderThread:2461 [sender.py:send():336] send: exit
+2024-07-30 01:33:39,994 INFO    SenderThread:2461 [sender.py:send_exit():559] handling exit code: 0
+2024-07-30 01:33:39,994 INFO    SenderThread:2461 [sender.py:send_exit():561] handling runtime: 4
+2024-07-30 01:33:39,995 INFO    SenderThread:2461 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-07-30 01:33:39,995 INFO    SenderThread:2461 [sender.py:send_exit():567] send defer
+2024-07-30 01:33:39,995 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:39,995 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 0
+2024-07-30 01:33:39,995 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:39,995 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 0
+2024-07-30 01:33:39,995 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 1
+2024-07-30 01:33:39,996 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:39,996 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 1
+2024-07-30 01:33:39,996 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:39,996 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 1
+2024-07-30 01:33:39,996 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 2
+2024-07-30 01:33:39,996 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:39,996 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 2
+2024-07-30 01:33:39,997 INFO    HandlerThread:2461 [system_monitor.py:finish():193] Stopping system monitor
+2024-07-30 01:33:39,997 DEBUG   SystemMonitor:2461 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2024-07-30 01:33:39,997 DEBUG   SystemMonitor:2461 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2024-07-30 01:33:39,997 DEBUG   SystemMonitor:2461 [system_monitor.py:_start():172] Publishing last batch of metrics
+2024-07-30 01:33:39,998 INFO    HandlerThread:2461 [interfaces.py:finish():199] Joined cpu monitor
+2024-07-30 01:33:39,998 INFO    HandlerThread:2461 [interfaces.py:finish():199] Joined disk monitor
+2024-07-30 01:33:40,004 INFO    HandlerThread:2461 [interfaces.py:finish():199] Joined gpu monitor
+2024-07-30 01:33:40,004 INFO    HandlerThread:2461 [interfaces.py:finish():199] Joined memory monitor
+2024-07-30 01:33:40,004 INFO    HandlerThread:2461 [interfaces.py:finish():199] Joined network monitor
+2024-07-30 01:33:40,004 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,004 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 2
+2024-07-30 01:33:40,004 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 3
+2024-07-30 01:33:40,004 DEBUG   SenderThread:2461 [sender.py:send():336] send: stats
+2024-07-30 01:33:40,004 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,005 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 3
+2024-07-30 01:33:40,005 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,005 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 3
+2024-07-30 01:33:40,005 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 4
+2024-07-30 01:33:40,005 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,005 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 4
+2024-07-30 01:33:40,005 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,006 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 4
+2024-07-30 01:33:40,006 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 5
+2024-07-30 01:33:40,006 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,006 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 5
+2024-07-30 01:33:40,006 DEBUG   SenderThread:2461 [sender.py:send():336] send: summary
+2024-07-30 01:33:40,006 INFO    SenderThread:2461 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-07-30 01:33:40,007 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,007 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 5
+2024-07-30 01:33:40,007 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 6
+2024-07-30 01:33:40,007 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,007 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 6
+2024-07-30 01:33:40,007 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,007 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 6
+2024-07-30 01:33:40,010 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: status_report
+2024-07-30 01:33:40,304 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 7
+2024-07-30 01:33:40,304 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,304 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 7
+2024-07-30 01:33:40,305 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,305 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 7
+2024-07-30 01:33:40,599 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 8
+2024-07-30 01:33:40,599 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,599 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 8
+2024-07-30 01:33:40,599 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,599 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 8
+2024-07-30 01:33:40,599 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 9
+2024-07-30 01:33:40,600 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,600 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 9
+2024-07-30 01:33:40,600 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,600 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 9
+2024-07-30 01:33:40,600 INFO    SenderThread:2461 [dir_watcher.py:finish():365] shutting down directory watcher
+2024-07-30 01:33:40,661 INFO    SenderThread:2461 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/output.log
+2024-07-30 01:33:40,661 INFO    SenderThread:2461 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/wandb-summary.json
+2024-07-30 01:33:40,661 INFO    SenderThread:2461 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/config.yaml
+2024-07-30 01:33:40,661 INFO    SenderThread:2461 [dir_watcher.py:finish():395] scan: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files
+2024-07-30 01:33:40,661 INFO    SenderThread:2461 [dir_watcher.py:finish():409] scan save: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/wandb-summary.json wandb-summary.json
+2024-07-30 01:33:40,662 INFO    SenderThread:2461 [dir_watcher.py:finish():409] scan save: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/wandb-metadata.json wandb-metadata.json
+2024-07-30 01:33:40,662 INFO    SenderThread:2461 [dir_watcher.py:finish():409] scan save: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/output.log output.log
+2024-07-30 01:33:40,664 INFO    SenderThread:2461 [dir_watcher.py:finish():409] scan save: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/config.yaml config.yaml
+2024-07-30 01:33:40,666 INFO    SenderThread:2461 [dir_watcher.py:finish():409] scan save: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/conda-environment.yaml conda-environment.yaml
+2024-07-30 01:33:40,668 INFO    SenderThread:2461 [dir_watcher.py:finish():409] scan save: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/requirements.txt requirements.txt
+2024-07-30 01:33:40,668 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 10
+2024-07-30 01:33:40,670 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:40,670 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 10
+2024-07-30 01:33:40,672 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:40,672 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 10
+2024-07-30 01:33:40,672 INFO    SenderThread:2461 [file_pusher.py:finish():164] shutting down file pusher
+2024-07-30 01:33:40,994 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: poll_exit
+2024-07-30 01:33:40,995 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: poll_exit
+2024-07-30 01:33:41,218 INFO    wandb-upload_4:2461 [upload_job.py:push():138] Uploaded file /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/requirements.txt
+2024-07-30 01:33:41,319 INFO    wandb-upload_1:2461 [upload_job.py:push():138] Uploaded file /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/output.log
+2024-07-30 01:33:41,330 INFO    wandb-upload_0:2461 [upload_job.py:push():138] Uploaded file /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/wandb-summary.json
+2024-07-30 01:33:41,387 INFO    wandb-upload_3:2461 [upload_job.py:push():138] Uploaded file /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/conda-environment.yaml
+2024-07-30 01:33:41,411 INFO    wandb-upload_2:2461 [upload_job.py:push():138] Uploaded file /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/files/config.yaml
+2024-07-30 01:33:41,611 INFO    Thread-23 (_thread_body):2461 [sender.py:transition_state():587] send defer: 11
+2024-07-30 01:33:41,612 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:41,612 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 11
+2024-07-30 01:33:41,612 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:41,612 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 11
+2024-07-30 01:33:41,612 INFO    SenderThread:2461 [file_pusher.py:join():169] waiting for file pusher
+2024-07-30 01:33:41,612 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 12
+2024-07-30 01:33:41,612 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:41,613 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 12
+2024-07-30 01:33:41,613 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:41,613 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 12
+2024-07-30 01:33:41,788 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 13
+2024-07-30 01:33:41,789 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:41,789 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 13
+2024-07-30 01:33:41,789 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:41,789 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 13
+2024-07-30 01:33:41,789 INFO    SenderThread:2461 [sender.py:transition_state():587] send defer: 14
+2024-07-30 01:33:41,790 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: defer
+2024-07-30 01:33:41,790 DEBUG   SenderThread:2461 [sender.py:send():336] send: final
+2024-07-30 01:33:41,790 INFO    HandlerThread:2461 [handler.py:handle_request_defer():170] handle defer: 14
+2024-07-30 01:33:41,790 DEBUG   SenderThread:2461 [sender.py:send():336] send: footer
+2024-07-30 01:33:41,790 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: defer
+2024-07-30 01:33:41,790 INFO    SenderThread:2461 [sender.py:send_request_defer():583] handle sender defer: 14
+2024-07-30 01:33:41,791 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: poll_exit
+2024-07-30 01:33:41,791 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: poll_exit
+2024-07-30 01:33:41,791 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: server_info
+2024-07-30 01:33:41,791 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: get_summary
+2024-07-30 01:33:41,792 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: sampled_history
+2024-07-30 01:33:41,792 DEBUG   SenderThread:2461 [sender.py:send_request():363] send_request: server_info
+2024-07-30 01:33:42,310 DEBUG   HandlerThread:2461 [handler.py:handle_request():144] handle_request: shutdown
+2024-07-30 01:33:42,310 INFO    HandlerThread:2461 [handler.py:finish():842] shutting down handler
+2024-07-30 01:33:42,792 INFO    WriterThread:2461 [datastore.py:close():298] close: /home/pawel/agilerl_connect4/wandb/run-20240730_013334-0i3zgfns/run-0i3zgfns.wandb
+2024-07-30 01:33:43,309 INFO    SenderThread:2461 [sender.py:finish():1504] shutting down sender
+2024-07-30 01:33:43,309 INFO    SenderThread:2461 [file_pusher.py:finish():164] shutting down file pusher
+2024-07-30 01:33:43,310 INFO    SenderThread:2461 [file_pusher.py:join():169] waiting for file pusher
